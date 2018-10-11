@@ -4,8 +4,8 @@ XIP_TIMESTAMP="2014102800"
 # The top-level domain for which the name server is authoritative.
 XIP_DOMAIN="xip.test"
 
-# The public IP addresses (e.g. for the web site) of the top-level domain.
-# `A` queries for the top-level domain will return this list of addresses.
+# The public IP addresses of the server.
+# `A` queries for the domain will return this list of addresses.
 XIP_ROOT_ADDRESSES=( "1.2.3.1" )
 
 # The public IP addresses on which this xip-pdns server will run.
