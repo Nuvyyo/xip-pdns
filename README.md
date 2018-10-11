@@ -21,4 +21,5 @@ Install this on your system, adjust [etc/xip-pdns.conf](etc/xip-pdns.conf.exampl
    via `dig` or `nslookup`. For example (with a server IP of 10.1.2.3):
 
    `dig +short iphone.234-42-52-12.dns-resolve.tablotv.com @10.1.2.3`
+
    `nslookup dns-resolve.tablotv.com 10.1.2.3`
