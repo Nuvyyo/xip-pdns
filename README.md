@@ -16,7 +16,8 @@ Install this on your system, adjust [etc/xip-pdns.conf](etc/xip-pdns.conf.exampl
 4. Provide a configuration, eg. by modifying `xip-pdns.conf.example` and
    pointing to the file from the PowerDNS configuration (see above section).
 5. On Ubuntu, run `systemctl disable systemd-resolved` as it runs on port `53`
-   by default, which is needed by PowerDNS.
+   by default, which is needed by PowerDNS. The service should also be stopped
+   via the `systemctl stop systemd-resolved` command.
 6. Remove the now-empty `/etc/resolv.conf` symlink, and create a new file
    containing a valid name server (eg. `nameserver 8.8.8.8`).
 7. Restart the server, everything should now be working. Testing can be done
